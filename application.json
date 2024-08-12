@@ -17,11 +17,11 @@
   "pages": [
     {
       "id": "Auth",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "User list",
-      "isDefault": true
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
