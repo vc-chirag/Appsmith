@@ -13,7 +13,6 @@ export default {
 		})
 			.then((response) => response.json())
 			.then((json) =>{
-			console.log(json);
 			showAlert('Data Trasnfer sucuessfully','success');
 		});
 	}

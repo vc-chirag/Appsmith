@@ -20,11 +20,9 @@ export default {
 		})
 			.then((response) => response.json())
 			.then((json) =>{
-			console.log(json);
 			if(json.status === 'fail') {
 				showAlert(json.message,'error');
 			} else {
-				console.log(json);
 				storeValue('token', json.data.token);
 				navigateTo('User list');
 				showAlert('Login successful','info');

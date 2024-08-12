@@ -13,7 +13,6 @@ export default {
 		})
 			.then((response) => response.json())
 			.then((json) =>{
-			console.log(json);
 			showAlert('Car added successfully','info');
 		});
 	}
