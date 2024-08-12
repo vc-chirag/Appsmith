@@ -19,7 +19,7 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.0ca0b0d56b58addbf45114ae5a79e88a.svg",
-  "image": "{{currentItem.qrcode_path}}",
+  "image": "{{appsmith.store.awsUrl}}{{currentItem.qrcode_path}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,

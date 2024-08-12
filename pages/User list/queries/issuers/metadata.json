@@ -15,7 +15,7 @@
       "headers": [
         {
           "key": "authorization",
-          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJibG9ja25ldC5hcHAiLCJleHAiOjE3MjM4MDg0MDMsImlhdCI6MTcyMzIwMzYwMywic3ViIjoibWFuaWwuamF5c3dhbDFAdmlpdG9yLmNsb3VkIiwidXNlcl9pZCI6OH0.s7CK0WddScUlsvGfdBPY6CYe8DfHZZZcF5FhICTQg-g"
+          "value": "Bearer {{appsmith.store.token}}"
         }
       ],
       "httpMethod": "GET",
@@ -57,7 +57,11 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "headers[0].value"
+      }
+    ],
     "executeOnLoad": true,
     "name": "issuers",
     "pageId": "User list",

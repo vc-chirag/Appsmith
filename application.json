@@ -16,6 +16,10 @@
   "evaluationVersion": 2,
   "pages": [
     {
+      "id": "Auth",
+      "isDefault": false
+    },
+    {
       "id": "User list",
       "isDefault": true
     }
