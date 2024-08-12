@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66b5aff5c3ac661798316106_780c1173-8c2e-42c4-a380-fd36ff70a1d6",
+  "id": "User list_transfer_car",
+  "unpublishedCollection": {
+    "name": "transfer_car",
+    "pageId": "User list",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
