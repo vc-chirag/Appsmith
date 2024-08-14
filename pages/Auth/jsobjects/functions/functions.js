@@ -1,7 +1,7 @@
 export default {
 	signIn: async () => {
-		const email  = "manil.jayswal1@viitor.cloud";
-		const password = "Everycred@123";
+		const email  = inp_email.text;
+		const password = inp_password.text;
 		if(!email){
 			showAlert('Email is required', 'error');
 		}
@@ -20,8 +20,7 @@ export default {
 		})
 			.then((response) => response.json())
 			.then((json) =>{
-			console.log(json);
-			if(json.status === 'fail') {
+			if(json.status === 401) {
 				showAlert(json.message,'error');
 			} else {
 				storeValue('token', json.data);
