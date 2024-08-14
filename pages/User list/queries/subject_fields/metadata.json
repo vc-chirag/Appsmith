@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66b5aff5c3ac661798316106_4629f9a2-c2dc-48df-a0dd-dcc41123f235",
-  "id": "User list_issuers",
+  "gitSyncId": "66b5aff5c3ac661798316106_76c68233-42e3-4a8a-8a54-bc20281a7515",
+  "id": "User list_subject_fields",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -21,30 +21,13 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/v1/user/issuers/credentials",
+      "path": "/v1/user/subject/fields/308",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [
-        {
-          "key": "type",
-          "value": "issued"
-        },
-        {
-          "key": "issuer_id",
-          "value": "186"
-        },
-        {
-          "key": "page",
-          "value": "1"
-        },
-        {
-          "key": "per_page",
-          "value": "5"
-        }
-      ],
+      "queryParameters": [],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -59,7 +42,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "issuers",
+    "name": "subject_fields",
     "pageId": "User list",
     "userSetOnLoad": false
   }

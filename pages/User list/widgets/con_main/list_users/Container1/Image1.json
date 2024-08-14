@@ -7,9 +7,6 @@
   "displayName": "Image",
   "dynamicBindingPathList": [
     {
-      "key": "image"
-    },
-    {
       "key": "borderRadius"
     }
   ],
@@ -19,7 +16,7 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.0ca0b0d56b58addbf45114ae5a79e88a.svg",
-  "image": "{{appsmith.store.awsUrl}}{{currentItem.qrcode_path}}",
+  "image": "",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,

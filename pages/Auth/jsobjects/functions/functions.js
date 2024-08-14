@@ -1,7 +1,7 @@
 export default {
 	signIn: async () => {
-		const email  = inp_email.text;
-		const password = inp_password.text;
+		const email  = "manil.jayswal1@viitor.cloud";
+		const password = "Everycred@123";
 		if(!email){
 			showAlert('Email is required', 'error');
 		}
@@ -11,7 +11,7 @@ export default {
 
 		const user = { email, password };
 
-		fetch("https://staging.everycred.com/v1/login", {
+		fetch("https://evrc-service.everycred.com/v1/login", {
 			method: "POST",
 			body: JSON.stringify(user),
 			headers: {
@@ -20,10 +20,11 @@ export default {
 		})
 			.then((response) => response.json())
 			.then((json) =>{
+			console.log(json);
 			if(json.status === 'fail') {
 				showAlert(json.message,'error');
 			} else {
-				storeValue('token', json.data.token);
+				storeValue('token', json.data);
 				navigateTo('User list');
 				showAlert('Login successful','info');
 			}

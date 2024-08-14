@@ -1,0 +1,48 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 13,
+  "boxShadow": "none",
+  "buttonColor": "#083f85",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "zohvue0zr9",
+  "leftColumn": 53,
+  "minWidth": 120,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 48,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(transferModal.name);\nmodalOpen.openModalWithData(currentItem);}}",
+  "parentColumnSpace": 16.2763671875,
+  "parentId": "z549vfa6cu",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "text": "Transfer",
+  "topRow": 9,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "34mcmm1m0r",
+  "widgetName": "Button8"
+}

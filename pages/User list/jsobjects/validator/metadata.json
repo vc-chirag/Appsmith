@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66b5aff5c3ac661798316106_6a64166c-a7db-49ac-9348-3b8170fd4d7e",
+  "id": "User list_validator",
+  "unpublishedCollection": {
+    "name": "validator",
+    "pageId": "User list",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
