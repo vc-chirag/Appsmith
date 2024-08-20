@@ -3,6 +3,5 @@ export default {
 		clearStore();
 		navigateTo('Auth');
 		showAlert('Logout sucessfully');
-		//	write code here
 	}
 }

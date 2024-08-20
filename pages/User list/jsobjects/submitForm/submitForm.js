@@ -31,23 +31,39 @@ export default {
 				};
 			}
 
-			fetch("https://jsonplaceholder.typicode.com/todos", {
+			fetch("https://evrc-service.everycred.com/v1/user/credentials/issue", {
 				method: "POST",
 				body: JSON.stringify(request_payload),
 				headers: {
-					"Content-type": "application/json; charset=UTF-8"
+					"Content-type": "application/json; charset=UTF-8",
+					"Authorization": "Bearer " + appsmith.store.token
 				}
 			})
-				.then((response) => response.json())
+				.then((response) => {
+				if (!response.ok) {
+					// Handle HTTP errors
+					return response.text().then(text => {
+						throw new Error(`HTTP error! Status: ${response.status}, 
+						Response:${text}`);
+					});
+				}
+				return response.json();
+			})
 				.then((json) =>{
+				console.log(json);
 				const currentModal = type == 'issuer' ? issuerModal : transferModal;
 				closeModal(currentModal.name);
 				issuers.run();
 				showAlert(
-					type == 'issuer'? 
+					type == 'issuer' ? 
 					'Add issuer submitted successfully':
 					'Transfer submitted successfully ',
 					'info');
+			})
+				.catch(error => {
+				// Handle network errors or any other errors
+				console.error('Fetch error:', error);
+				showAlert('An error occurred while submitting the request', 'error');
 			});
 		} else {
 			showAlert('please fill all required fields','error');
