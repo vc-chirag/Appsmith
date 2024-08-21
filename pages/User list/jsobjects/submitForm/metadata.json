@@ -6,6 +6,11 @@
     "pageId": "User list",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "loader",
+        "value": "false"
+      }
+    ]
   }
 }
